@@ -92,7 +92,7 @@ module.exports = {
     'no-sequences': 2,
     'no-throw-literal': 2,
     'no-unused-expressions': 2,
-    'no-void': 2,
+    'no-void': 0,
     'no-warning-comments': [1, {'terms': ['todo', 'fixme', 'any other term']}],
     'no-with': 2,
     'radix': 1,
@@ -118,6 +118,7 @@ module.exports = {
     'func-style': 0,
     'key-spacing': [2, {'beforeColon': false, 'afterColon': true}],
     'max-nested-callbacks': 0,
+    // 要求构造函数首字母大写 （要求调用 new 操作符时有首字母大小的函数，允许调用首字母大写的函数时没有 new 操作符。）
     'new-cap': [2, {'newIsCap': true, 'capIsNew': false}],
     'new-parens': 2,
     'newline-after-var': 1,
@@ -158,6 +159,12 @@ module.exports = {
       'ignore-params',
       'ignore-properties'
     ],
-    'object-curly-spacing': 0,//大括号内是否允许不必要的空格
+    'no-empty-function':2,
+    'array-bracket-spacing': [2, "never"],
+    // 大括号间必有空格
+    'object-curly-spacing': ["error", "always"],
+    "block-spacing":[2, "never"],
+    // 要求在注释周围有空行 ( 要求在块级注释之前有一空行)
+    "lines-around-comment": [2, {"beforeBlockComment":true}],
   }
 }
