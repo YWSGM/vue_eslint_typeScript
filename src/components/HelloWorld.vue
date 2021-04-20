@@ -12,8 +12,10 @@ import { Component, Prop, Provide, Vue, Watch } from 'vue-property-decorator';
 
 @Component
 export default class HelloWorld extends Vue {
+  // props
   @Prop() private msg!: string;
 
+  // data
   @Provide() name = 'vue';
 
   @Provide() count = 0;
@@ -24,6 +26,7 @@ export default class HelloWorld extends Vue {
     age: 3
   };
 
+  // watch
   @Watch('count')
   computedCount(val: number, oldVal: number): void{
     this.text = '哈哈哈' + val + oldVal;

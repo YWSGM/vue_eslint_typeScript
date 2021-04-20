@@ -12,8 +12,8 @@ module.exports = {
     ecmaVersion: 2020
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 2 : 1,
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 1,
+    "no-console": process.env.NODE_ENV === 'production' ? 2 : 1,
+    "no-debugger": process.env.NODE_ENV === 'production' ? 2 : 1,
     "comma-dangle": ["error", "never"],
     "no-cond-assign": 2,
     "indent": [2, 2],
