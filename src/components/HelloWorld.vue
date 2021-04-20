@@ -3,14 +3,21 @@
     <h1>{{ msg }}</h1>
     <h2>{{ name }}</h2>
     <h3>{{ text }}</h3>
+    <Test />
     <button @click="add">哈哈</button>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Provide, Vue, Watch } from 'vue-property-decorator';
+import Test from '@/components/test.vue';
 
-@Component
+// 使用子组件
+@Component({
+  components: {
+    Test
+  }
+})
 export default class HelloWorld extends Vue {
   // props
   @Prop() private msg!: string;
