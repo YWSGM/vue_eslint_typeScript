@@ -38,7 +38,7 @@ module.exports = {
     'no-negated-in-lhs': 2,
     'no-obj-calls': 2,
     'no-regex-spaces': 2,
-    'quote-props': 2,
+    'quote-props': 0,
     'no-sparse-arrays': 2,
     'no-unreachable': 2,
     'use-isnan': 2,
