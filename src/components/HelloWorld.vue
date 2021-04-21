@@ -14,6 +14,7 @@ import Test from '@/components/test.vue';
 
 // 使用子组件
 @Component({
+  // 注册组件
   components: {
     Test
   }
